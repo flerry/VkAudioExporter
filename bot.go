@@ -1,15 +1,15 @@
 package main
 
 import (
+	"github.com/emirpasic/gods/sets/hashset"
 	"github.com/go-telegram-bot-api/telegram-bot-api"
 	"log"
 	"os"
 	"regexp"
+	"strconv"
 	"strings"
 	"time"
 	"vkAudioBot/vk"
-	"github.com/emirpasic/gods/sets/hashset"
-	"strconv"
 )
 
 const (
@@ -52,6 +52,9 @@ func main() {
 	u.Timeout = 60
 
 	updates, err := bot.GetUpdatesChan(u)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	for update := range updates {
 		if update.Message == nil {

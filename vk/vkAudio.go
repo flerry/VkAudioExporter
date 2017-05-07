@@ -17,8 +17,8 @@ const (
 		"b00e0925535b7f5beaf7fe6f01f3fc545d2144820b2c639a62e04c376ca55ebe408737b58962ee037b6f7&owner_id="
 	AUDIO_COUNT = "https://api.vk.com/method/audio.getCount?" +
 		"access_token=71b1ca0aca0fb70b4c485efa182d75854c1c3f9f27826253b1ec377a487a2afbfa42bc4d4d98bc22b362c&owner_id="
-	USER_AGENT   = "VKAndroidApp/4.9-1118 (Android 5.1; SDK 22; armeabi-v7a; UMI IRON; ru)"
-	PROXY        = "http://46.8.29.52:65233" //"http://46.8.29.52:65233" "http://77.73.65.155:8080"
+	USER_AGENT = "VKAndroidApp/4.9-1118 (Android 5.1; SDK 22; armeabi-v7a; UMI IRON; ru)"
+	PROXY      = "http://46.8.29.52:65233" //"http://46.8.29.52:65233" "http://77.73.65.155:8080"
 )
 
 type AudioCount struct {
