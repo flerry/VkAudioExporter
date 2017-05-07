@@ -39,7 +39,7 @@ func init() {
 func main() {
 	bannedUsers := hashset.New()
 
-	bot, err := tgbotapi.NewBotAPI("300531701:AAE93B5-9jUozeru6w-oLGTGW1raIc75hnE") //314564211:AAH59sKgMcht-F_sVevp3jGXLo9j2VELRqg CASLBOT 300531701:AAE93B5-9jUozeru6w-oLGTGW1raIc75hnE REALBOT
+	bot, err := tgbotapi.NewBotAPI("3005701:AAE93B5-9jUozeru6w-oLGTGW1raIc75hnE") //314564211:AAH59sKgMcht-F_sVevp3jGXLo9j2VELRqg CASLBOT 300531701:AAE93B5-9jUozeru6w-oLGTGW1raIc75hnE REALBOT
 	if err != nil {
 		panic(err)
 	}
